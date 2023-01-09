@@ -14,7 +14,7 @@ import java.util.List;
 @Transactional
 class MemberTest {
 
-    @PersistenceContext
+    @Autowired
     EntityManager em;
 
     @Test

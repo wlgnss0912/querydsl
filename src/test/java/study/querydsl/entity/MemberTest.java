@@ -1,6 +1,7 @@
 package study.querydsl.entity;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ import java.util.List;
 @Transactional
 class MemberTest {
 
-    @Autowired
+    @PersistenceContext
     EntityManager em;
 
     @Test
